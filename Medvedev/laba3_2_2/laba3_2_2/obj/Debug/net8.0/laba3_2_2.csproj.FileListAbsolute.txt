@@ -1,0 +1,15 @@
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\bin\Debug\net8.0\laba3_2_2.exe
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\bin\Debug\net8.0\laba3_2_2.deps.json
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\bin\Debug\net8.0\laba3_2_2.runtimeconfig.json
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\bin\Debug\net8.0\laba3_2_2.dll
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\bin\Debug\net8.0\laba3_2_2.pdb
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.AssemblyInfoInputs.cache
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.AssemblyInfo.cs
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.csproj.CoreCompileInputs.cache
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.sourcelink.json
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.dll
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\refint\laba3_2_2.dll
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.pdb
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\laba3_2_2.genruntimeconfig.cache
+C:\git\learningalt\Medvedev\laba3_2_2\laba3_2_2\obj\Debug\net8.0\ref\laba3_2_2.dll

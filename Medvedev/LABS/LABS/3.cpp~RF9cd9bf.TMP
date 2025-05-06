@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath> // Для M_PI и математических функций
+
+// Определяем M_PI, если он не определен (например, в некоторых стандартах C++)
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+class CircleUtils {
+public:
+    // Статический метод для вычисления длины окружности
+    static double calculateCircumference(double radius) {
+        if (radius < 0) {
+            std::cerr << "Ошибка: Радиус не может быть отрицательным." << std::endl;
+            return 0.0; // Или выбросить исключение
+        }
+        return 2 * M_PI * radius;
+    }
+};
+
+int main() {
+    std::cout << "Лабораторная работа 3, Задание 1: Длина окружности" << std::endl;
+    double r;
+
+    std::cout << "Введите радиус круга: ";
+    std::cin >> r;
+
+    double circumference = CircleUtils::calculateCircumference(r);
+
+    if (r >= 0) { // Проверка, чтобы не выводить результат, если была ошибка
+        std::cout << "Длина окружности с радиусом " << r << " равна: " << circumference << std::endl;
+    }
+
+    std::cout << "\nТестирование с другими значениями:" << std::endl;
+    std::cout << "Радиус 1: Длина = " << CircleUtils::calculateCircumference(1.0) << std::endl;
+    std::cout << "Радиус 0: Длина = " << CircleUtils::calculateCircumference(0.0) << std::endl;
+    std::cout << "Радиус -5: "; // Ошибка будет выведена методом
+    CircleUtils::calculateCircumference(-5.0);
+    std::cout << std::endl;
+
+    return 0;
+}

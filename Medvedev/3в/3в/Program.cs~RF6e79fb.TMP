@@ -1,0 +1,100 @@
+﻿using OpenTK.Graphics.OpenGL; // Для работы с OpenGL
+using OpenTK.Mathematics;     // Для Vector3, Vector4, Matrix4
+using System;
+using OpenTK.Windowing.Desktop;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var settings = new NativeWindowSettings() { Size = new Vector2i(800, 600) };
+        using (var window = new GameWindow(GameWindowSettings.Default, settings))
+        {
+            GameEngine engine = new GameEngine();
+            window.UpdateFrame += (e) => engine.Update();
+            window.RenderFrame += (e) => engine.Render();
+            window.Run();
+        }
+    }
+}
+public class GameEngine
+{
+    private Vector3 cameraPosition = new Vector3(0, 0, 5); // Позиция камеры
+    private Vector3 cameraTarget = Vector3.Zero;          // Точка, на которую смотрит камера
+    private Vector3 cameraUp = Vector3.UnitY;             // Направление "вверх"
+    private float lightIntensity = 1.0f;                  // Интенсивность света
+
+    public void Initialize()
+    {
+        GL.Enable(EnableCap.DepthTest); // Включаем тест глубины
+        GL.Enable(EnableCap.Lighting);  // Включаем освещение
+        GL.Enable(EnableCap.Light0);    // Включаем источник света 0
+
+        // Настройка источника света
+        float[] lightPos = { 0, 10, 10, 1 }; // Позиция света
+        float[] ambient = { 0.2f, 0.2f, 0.2f, 1 }; // Окружающий свет
+        float[] diffuse = { lightIntensity, lightIntensity, lightIntensity, 1 }; // Рассеянный свет
+
+        GL.Light(LightName.Light0, LightParameter.Position, lightPos);
+        GL.Light(LightName.Light0, LightParameter.Ambient, ambient);
+        GL.Light(LightName.Light0, LightParameter.Diffuse, diffuse);
+    }
+
+    public void Update()
+    {
+        // Обновление состояния игры (например, движение камеры)
+    }
+
+    public void Render()
+    {
+        GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+
+        // Настройка матрицы камеры
+        Matrix4 view = Matrix4.LookAt(cameraPosition, cameraTarget, cameraUp);
+        GL матрица GL.LoadMatrix(ref view);
+
+        // Рендеринг куба
+        DrawCube();
+    }
+
+    private void DrawCube()
+    {
+        GL.Begin(PrimitiveType.Quads);
+
+        // Передняя грань куба
+        GL.Normal3(0, 0, 1);
+        GL.Vertex3(-1, -1, 1);
+        GL.Vertex3(1, -1, 1);
+        GL.Vertex3(1, 1, 1);
+        GL.Vertex3(-1, 1, 1);
+
+        // Задняя грань куба
+        GL.Normal3(0, 0, -1);
+        GL.Vertex3(-1, -1, -1);
+        GL.Vertex3(1, -1, -1);
+        GL.Vertex3(1, 1, -1);
+        GL.Vertex3(-1, 1, -1);
+
+        GL.End();
+    }
+
+    public void Run()
+    {
+        Initialize();
+        while (true) // Замените на реальный цикл окна
+        {
+            Update();
+            Render();
+            // SwapBuffers();
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        GameEngine engine = new GameEngine();
+        engine.Run();
+    }
+}

@@ -10,13 +10,19 @@ public class laba3_1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("radius: ");
-        double radius = scanner.nextDouble();
-        double circumference = calculateCircumference(radius);
-        System.out.println("Длина окружности с радиусом " + radius + " равна " + circumference);
 
-        radius = 10.0;
-        circumference = calculateCircumference(radius);
-        System.out.println("Длина окружности с радиусом " + radius + " равна " + circumference);
+        System.out.print("Введите радиус круга: ");
+        double radius;
+        if (scanner.hasNextDouble()) {
+            radius = scanner.nextDouble();
+            if (radius >= 0) {
+                System.out.println("Длина окружности: " + calculateCircumference(radius));
+            } else {
+                System.out.println("Радиус не может быть отрицательным.");
+            }
+        } else {
+            System.out.println("Введено некорректное значение для радиуса.");
+        }
+        scanner.close();
     }
 }

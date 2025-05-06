@@ -1,0 +1,31 @@
+﻿using System;
+
+class NumberAnalysis
+{
+    static void Main()
+    {
+        // Ввод натурального числа
+        Console.WriteLine("Введите натуральное число:");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        int count = 0;
+        int sum = 0;
+        int product = 1;
+
+        // Проход по цифрам числа
+        int temp = number;
+        while (temp > 0)
+        {
+            int digit = temp % 10;
+            sum += digit;
+            product *= digit;
+            count++;
+            temp /= 10;
+        }
+
+        // Вывод результатов
+        Console.WriteLine("Количество цифр: " + count);
+        Console.WriteLine("Сумма цифр: " + sum);
+        Console.WriteLine("Произведение цифр: " + product);
+    }
+}

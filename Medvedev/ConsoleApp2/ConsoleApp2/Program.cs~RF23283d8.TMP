@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class ArrayReorganizer
+{
+    public static int[] ReorganizeArray(int[] arr)
+    {
+        if (arr == null || arr.Length == 0)
+        {
+            return new int[0]; // Возвращаем пустой массив для пустых или null массивов.
+        }
+
+        List<int> negativeAndZero = new List<int>();
+        List<int> positive = new List<int>();
+        List<int> zero = new List<int>();
+
+        foreach (int num in arr)
+        {
+            if (num < 0)
+            {
+                negativeAndZero.Add(num);
+            }
+            else if (num == 0)
+            {
+               zero.Add(num);
+            }
+            else 
+            {
+                positive.Add(num);
+            }
+        }
+
+        return negativeAndZero.Concat(zero.Concat(positive).ToArray()).ToArray();
+    }
+
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Введите количество элементов в массиве:");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int[] arr = new int[n];
+        Console.WriteLine("Введите элементы массива через пробел:");
+        string[] input = Console.ReadLine().Split(' ');
+
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = Convert.ToInt32(input[i]);
+        }
+
+        int[] reorganizedArray = ReorganizeArray(arr);
+
+        Console.WriteLine("Реорганизованный массив:");
+        foreach (int num in reorganizedArray)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
+    }
+}

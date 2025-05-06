@@ -1,0 +1,15 @@
+C:\git\learningalt\Medvedev\tt\tt\bin\Debug\net8.0\tt.exe
+C:\git\learningalt\Medvedev\tt\tt\bin\Debug\net8.0\tt.deps.json
+C:\git\learningalt\Medvedev\tt\tt\bin\Debug\net8.0\tt.runtimeconfig.json
+C:\git\learningalt\Medvedev\tt\tt\bin\Debug\net8.0\tt.dll
+C:\git\learningalt\Medvedev\tt\tt\bin\Debug\net8.0\tt.pdb
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.AssemblyInfoInputs.cache
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.AssemblyInfo.cs
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.csproj.CoreCompileInputs.cache
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.sourcelink.json
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.dll
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\refint\tt.dll
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.pdb
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\tt.genruntimeconfig.cache
+C:\git\learningalt\Medvedev\tt\tt\obj\Debug\net8.0\ref\tt.dll

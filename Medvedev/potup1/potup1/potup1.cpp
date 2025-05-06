@@ -1,68 +1,71 @@
 ﻿#include <iostream>
 #include <vector>
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "Russian");
+
     int N;
     cout << "Введите количество элементов массива: ";
     cin >> N;
 
-    vector<int> a(N);
+    vector<string> a(N);
     cout << "Введите элементы массива:" << endl;
     for (int i = 0; i < N; i++) {
         cin >> a[i];
     }
 
-    for (int i = 0; i < N - 1; i++) {
-        for (int j = 0; j < N - i - 1; j++) {
-            if (a[j] > a[j + 1]) {
-                int temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
-            }
-        }
-    }
+    sort(a.begin(), a.end(), greater<string>());
 
-    cout << "Отсортированный массив:" << endl;
+    cout << "\nОтсортированный массив (по убыванию):" << endl;
     for (int i = 0; i < N; i++) {
         cout << a[i] << "\t";
     }
-    cout << endl;
+    cout << "\nВсего элементов: " << N << endl;
 
-    int k = N;
-    cout << "Всего элементов: " << k<< endl;
 
-    int G;
-    cout << "Введите искомое число: ";
-    cin >> G;
+    string key;
+    cout << "\nВведите искомое слово: ";
+    cin >> key;
+
 
     int left = 0;
     int right = N - 1;
-    int o = 0; 
     bool found = false;
+    int iterations = 0; 
+    int mid;
 
     while (left <= right) {
-        int mid = left + (right - left) / 2;
-        if (G == a[mid]) {
-            cout << "Ваш элемент под номером " << mid + 1 << " (индекс: " << mid << ")" << endl;
+        mid = left + (right - left) / 2;
+        iterations++;
+
+        if (a[mid] == key) {
+            cout << "\nЭлемент найден: \"" << key << "\" находится на позиции "
+                << mid + 1 << " (индекс: " << mid << ")." << endl;
             found = true;
-            break; 
+            break;
         }
-        if (a[mid] > G) {
-            right = mid - 1;
-        }
-        else {
+
+
+        if (a[mid] > key) {
             left = mid + 1;
         }
-        cout << "Элемент " << G << " не найден в массиве. Итерация номер " << o << endl;
-        o++;
+        else {
+            right = mid - 1;
+        }
+
+        cout << "Итерация " << iterations << ": искомый элемент \"" << key
+            << "\" не найден, продолжаем поиск." << endl;
     }
 
     if (!found) {
-        cout << "Элемент " << G << " не найден в массиве после " << o << " итераций." << endl;
+        cout << "\nЭлемент \"" << key << "\" не найден в массиве после "
+            << iterations << " итераций." << endl;
     }
+
 
     return 0;
 }

@@ -1,0 +1,15 @@
+C:\git\learningalt\Medvedev\claba\claba\bin\Debug\net8.0\claba.exe
+C:\git\learningalt\Medvedev\claba\claba\bin\Debug\net8.0\claba.deps.json
+C:\git\learningalt\Medvedev\claba\claba\bin\Debug\net8.0\claba.runtimeconfig.json
+C:\git\learningalt\Medvedev\claba\claba\bin\Debug\net8.0\claba.dll
+C:\git\learningalt\Medvedev\claba\claba\bin\Debug\net8.0\claba.pdb
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.AssemblyInfoInputs.cache
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.AssemblyInfo.cs
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.csproj.CoreCompileInputs.cache
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.sourcelink.json
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.dll
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\refint\claba.dll
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.pdb
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\claba.genruntimeconfig.cache
+C:\git\learningalt\Medvedev\claba\claba\obj\Debug\net8.0\ref\claba.dll

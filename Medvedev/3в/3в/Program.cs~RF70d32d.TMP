@@ -1,0 +1,99 @@
+﻿using OpenTK.Graphics.OpenGL4; // Используем OpenGL4, который должен включать GL.Light при совместимом профиле
+using OpenTK.Mathematics;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
+using OpenTK.Windowing.GraphicsLibraryFramework;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Используем настройки по умолчанию, которые должны обеспечить совместимый профиль OpenGL
+        var settings = new NativeWindowSettings() { Size = new Vector2i(800, 600) };
+        using (var window = new GameWindow(GameWindowSettings.Default, settings))
+        {
+            GameEngine engine = new GameEngine();
+
+            window.Load += () =>
+            {
+                engine.Initialize();
+            };
+
+            window.UpdateFrame += (e) =>
+            {
+                engine.Update(e.Time);
+                if (window.KeyboardState[Keys.Escape])
+                {
+                    window.Close();
+                }
+            };
+
+            window.RenderFrame += (e) =>
+            {
+                engine.Render(e.Time);
+                window.SwapBuffers();
+            };
+
+            window.Run();
+        }
+    }
+}
+
+public class GameEngine
+{
+    private Vector3 cameraPosition = new Vector3(0, 0, 5);
+    private Vector3 cameraTarget = Vector3.Zero;
+    private Vector3 cameraUp = Vector3.UnitY;
+
+    public void Initialize()
+    {
+        GL.Enable(EnableCap.DepthTest);
+        GL.Enable(EnableCap.Lighting);  // Включаем освещение (фиксированный конвейер)
+        GL.Enable(EnableCap.Light0);    // Включаем источник света 0 (фиксированный конвейер)
+
+        // Настройка источника света 0 (фиксированный конвейер)
+        float[] lightPos = { 0, 10, 10, 1 };
+        float[] ambient = { 0.2f, 0.2f, 0.2f, 1 };
+        float[] diffuse = { 1.0f, 1.0f, 1.0f, 1 }; // Полная интенсивность для начала
+
+        GL.Light(LightName.Light0, LightParameter.Position, lightPos); // Используем GL.Light - должно работать в совместимом профиле
+        GL.Light(LightName.Light0, LightParameter.Ambient, ambient);
+        GL.Light(LightName.Light0, LightParameter.Diffuse, diffuse);
+
+        GL.ClearColor(Color4.CornflowerBlue);
+    }
+
+    public void Update(double time)
+    {
+        // Обновления пока не нужны для минимального примера
+    }
+
+    public void Render(double time)
+    {
+        GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+
+        Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), 800f / 600f, 0.1f, 100.0f);
+        GL.MatrixMode(MatrixMode.Projection);
+        GL.LoadMatrix(ref projection);
+
+        Matrix4 view = Matrix4.LookAt(cameraPosition, cameraTarget, cameraUp);
+        GL.MatrixMode(MatrixMode.Modelview);
+        GL.LoadMatrix(ref view);
+
+        DrawCube();
+    }
+
+    private void DrawCube()
+    {
+        GL.Begin(PrimitiveType.Quads);
+
+        // Передняя грань (только для примера, чтобы увидеть хоть что-то)
+        GL.Normal3(0, 0, 1);
+        GL.Vertex3(-1, -1, 1);
+        GL.Vertex3(1, -1, 1);
+        GL.Vertex3(1, 1, 1);
+        GL.Vertex3(-1, 1, 1);
+
+        GL.End();
+    }
+}

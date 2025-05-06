@@ -1,0 +1,15 @@
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\bin\Debug\net8.0\Laba4_.exe
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\bin\Debug\net8.0\Laba4_.deps.json
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\bin\Debug\net8.0\Laba4_.runtimeconfig.json
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\bin\Debug\net8.0\Laba4_.dll
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\bin\Debug\net8.0\Laba4_.pdb
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.AssemblyInfoInputs.cache
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.AssemblyInfo.cs
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.csproj.CoreCompileInputs.cache
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.sourcelink.json
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.dll
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\refint\Laba4_.dll
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.pdb
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\Laba4_.genruntimeconfig.cache
+C:\git\learningalt\Medvedev\Laba4_\Laba4_\obj\Debug\net8.0\ref\Laba4_.dll

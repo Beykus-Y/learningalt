@@ -1,0 +1,82 @@
+﻿#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    // Ввод количества элементов массива
+    int N;
+    cout << "Введите количество элементов массива: ";
+    cin >> N;
+
+    // Ввод элементов массива
+    vector<string> a(N);
+    cout << "Введите элементы массива:" << endl;
+    for (int i = 0; i < N; i++) {
+        cin >> a[i];
+    }
+
+    // Сортировка по убыванию, используя STL sort и компаратор greater<string>()
+    sort(a.begin(), a.end(), greater<string>());
+
+    // Вывод отсортированного массива
+    cout << "\nОтсортированный массив (по убыванию):" << endl;
+    for (int i = 0; i < N; i++) {
+        cout << a[i] << "\t";
+    }
+    cout << "\nВсего элементов: " << N << endl;
+
+    // Ввод искомого элемента
+    string key;
+    cout << "\nВведите искомое слово: ";
+    cin >> key;
+
+    // Бинарный поиск в массиве, отсортированном по убыванию
+    int left = 0;
+    int right = N - 1;
+    bool found = false;
+    int iterations = 0; // счетчик итераций поиска
+    int mid;
+
+    while (left <= right) {
+        mid = left + (right - left) / 2;
+        iterations++;
+
+        if (a[mid] == key) {
+            cout << "\nЭлемент найден: \"" << key << "\" находится на позиции "
+                << mid + 1 << " (индекс: " << mid << ")." << endl;
+            found = true;
+            break;
+        }
+
+        // Для сортировки по убыванию:
+        // Если a[mid] > key, то искомый элемент меньше текущего и должен находиться правее.
+        if (a[mid] > key) {
+            left = mid + 1;
+        }
+        else { // Если a[mid] < key, то искомый элемент больше текущего и должен находиться левее.
+            right = mid - 1;
+        }
+
+        cout << "Итерация " << iterations << ": искомый элемент \"" << key
+            << "\" не найден, продолжаем поиск." << endl;
+    }
+
+    if (!found) {
+        cout << "\nЭлемент \"" << key << "\" не найден в массиве после "
+            << iterations << " итераций." << endl;
+    }
+
+    /*
+       Оценка сложности:
+       - Сортировка: STL sort работает за O(N log N) в среднем.
+       - Бинарный поиск: имеет временную сложность O(log N).
+       - Дополнительная память: используется вектор, поэтому пространственная сложность O(N).
+    */
+
+    return 0;
+}

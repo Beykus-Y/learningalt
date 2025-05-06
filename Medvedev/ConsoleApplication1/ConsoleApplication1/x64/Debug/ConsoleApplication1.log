@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+C:\git\learningalt\Medvedev\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(14,13): error C2059: синтаксическая ошибка: =
+C:\git\learningalt\Medvedev\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(14,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\git\learningalt\Medvedev\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(17,5): error C2181: недопустимый else без парного if
