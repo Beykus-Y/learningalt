@@ -5,7 +5,7 @@ namespace org.example
 {
     public class Laba4_Rectangle
     {
-        public int x1, y1, x2, y2; // Оставляем как поля для соответствия примеру Java
+        public int x1, y1, x2, y2;
 
         public Laba4_Rectangle(int x1, int y1, int x2, int y2)
         {

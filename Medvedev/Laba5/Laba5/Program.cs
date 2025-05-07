@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Text; 
+using System.IO;
+using System.Text;
 
 namespace org.example
 {
@@ -26,37 +27,32 @@ namespace org.example
                 {
                     if (spaceCount > 0)
                     {
-                        if (spaceCount % 2 == 0)
-                        {
-                            result.Append('Ч');
-                        }
-                        else
-                        {
-                            result.Append('Н');
-                        }
+                        result.Append(spaceCount % 2 == 0 ? 'Ч' : 'Н');
                         spaceCount = 0;
                     }
                     result.Append(currentChar);
                 }
             }
+
             if (spaceCount > 0)
             {
-                if (spaceCount % 2 == 0)
-                {
-                    result.Append('Ч');
-                }
-                else
-                {
-                    result.Append('Н');
-                }
+                result.Append(spaceCount % 2 == 0 ? 'Ч' : 'Н');
             }
+
             return result.ToString();
         }
 
-        public static void Main(string[] args) // Измените имя
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Введите строку текста:");
-            string content = Console.ReadLine();
+            string filePath = @"C:\test\input.txt";
+
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("Файл не найден: " + filePath);
+                return;
+            }
+
+            string content = File.ReadAllText(filePath, Encoding.UTF8);
 
             Console.WriteLine("Исходная строка: " + content);
 

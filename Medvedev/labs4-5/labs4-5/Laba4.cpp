@@ -29,6 +29,7 @@ namespace org_example {
 } // namespace org_example
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     int x1_in, y1_in, x2_in, y2_in;
 
     std::cout << "¬ведите координаты левого верхнего угла (x1, y1):" << std::endl;

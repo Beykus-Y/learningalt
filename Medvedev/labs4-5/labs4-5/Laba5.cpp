@@ -1,62 +1,66 @@
 #include <iostream>
 #include <string>
-
+#include <fstream>
+#include <codecvt>
+#include <locale>
+#include <windows.h>
 
 namespace org_example {
 
-    std::string processStringWithSpaces(const std::string& input) {
+    std::wstring processStringWithSpaces(const std::wstring& input) {
         if (input.empty()) {
-            return "";
+            return L"";
         }
 
-        std::string result_str;
-        result_str.reserve(input.length()); // Оптимизация
+        std::wstring result_str;
+        result_str.reserve(input.length());
         int spaceCount = 0;
 
-        const std::string CH_REPLACEMENT = "Ч";
-        const std::string N_REPLACEMENT = "Н";
+        const wchar_t CH_REPLACEMENT = L'Ч';
+        const wchar_t N_REPLACEMENT = L'Н';
 
-        for (char currentChar : input) {
-            if (currentChar == ' ') {
+        for (wchar_t currentChar : input) {
+            if (currentChar == L' ') {
                 spaceCount++;
             }
             else {
                 if (spaceCount > 0) {
-                    if (spaceCount % 2 == 0) {
-                        result_str += CH_REPLACEMENT;
-                    }
-                    else {
-                        result_str += N_REPLACEMENT;
-                    }
+                    result_str += (spaceCount % 2 == 0) ? CH_REPLACEMENT : N_REPLACEMENT;
                     spaceCount = 0;
                 }
                 result_str += currentChar;
             }
         }
-        // Обработка пробелов в конце строки
+
         if (spaceCount > 0) {
-            if (spaceCount % 2 == 0) {
-                result_str += CH_REPLACEMENT;
-            }
-            else {
-                result_str += N_REPLACEMENT;
-            }
+            result_str += (spaceCount % 2 == 0) ? CH_REPLACEMENT : N_REPLACEMENT;
         }
+
         return result_str;
     }
 
 } // namespace org_example
 
 int main() {
-    system("chcp 1251");
-    std::string content;
-    std::cout << "Введите строку текста:" << std::endl;
-    std::getline(std::cin, content); // Чтение всей строки, включая пробелы
+    // Настройка консоли на UTF-8
+    SetConsoleOutputCP(CP_UTF8);
+    std::locale::global(std::locale(""));
 
-    std::cout << "Исходная строка: " << content << std::endl;
+    std::wifstream inputFile("C:/test/input.txt");
+    inputFile.imbue(std::locale(inputFile.getloc(), new std::codecvt_utf8<wchar_t>));
 
-    std::string processedContent = org_example::processStringWithSpaces(content);
-    std::cout << "Обработанная строка: " << processedContent << std::endl;
+    if (!inputFile) {
+        std::wcerr << L"Не удалось открыть файл C:/test/input.txt" << std::endl;
+        return 1;
+    }
+
+    std::wstring content((std::istreambuf_iterator<wchar_t>(inputFile)), std::istreambuf_iterator<wchar_t>());
+    inputFile.close();
+
+    std::wcout << L"Исходная строка: " << content << std::endl;
+
+    std::wstring processedContent = org_example::processStringWithSpaces(content);
+    std::wcout << L"Обработанная строка: " << processedContent << std::endl;
 
     return 0;
 }

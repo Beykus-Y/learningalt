@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\git\\learningalt\\Medvedev\\LABS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\3.1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\3.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\3.2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{69EC4615-6692-4037-AC72-9D6758BBA24A}|LABS\\LABS.vcxproj|solutionrelative:LABS\\5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "5.cpp",
               "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\5.cpp",
               "RelativeDocumentMoniker": "LABS\\5.cpp",
@@ -57,46 +57,46 @@
               "RelativeDocumentMoniker": "LABS\\4.cpp",
               "ToolTip": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\4.cpp",
               "RelativeToolTip": "LABS\\4.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAADwv1UAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:25:02.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "3.2.cpp",
               "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.2.cpp",
               "RelativeDocumentMoniker": "LABS\\3.2.cpp",
               "ToolTip": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.2.cpp",
               "RelativeToolTip": "LABS\\3.2.cpp",
-              "ViewState": "AgIAAFwAAAAAAAAAAADwv4EAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAADwv1MAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:24:24.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "3.1.cpp",
               "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.1.cpp",
               "RelativeDocumentMoniker": "LABS\\3.1.cpp",
-              "ToolTip": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.1.cpp",
-              "RelativeToolTip": "LABS\\3.1.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAADwv0kAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.1.cpp*",
+              "RelativeToolTip": "LABS\\3.1.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:24:20.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "3.cpp",
               "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.cpp",
               "RelativeDocumentMoniker": "LABS\\3.cpp",
               "ToolTip": "C:\\git\\learningalt\\Medvedev\\LABS\\LABS\\3.cpp",
               "RelativeToolTip": "LABS\\3.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:24:15.541Z",
               "EditorCaption": ""

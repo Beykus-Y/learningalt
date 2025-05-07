@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\git\\learningalt\\Medvedev\\labs4-5\\",
+  "WorkspaceRootPath": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\laba5-6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|solutionrelative:labs4-5\\laba5-6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|solutionrelative:labs4-5\\Laba5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D8BE8656-B2F0-49B5-8107-9803A3D08E24}|labs4-5\\labs4-5.vcxproj|solutionrelative:labs4-5\\Laba4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -27,25 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "laba5-6.cpp",
+              "DocumentMoniker": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\laba5-6.cpp",
+              "RelativeDocumentMoniker": "labs4-5\\laba5-6.cpp",
+              "ToolTip": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\laba5-6.cpp",
+              "RelativeToolTip": "labs4-5\\laba5-6.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-07T01:31:39.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Laba5.cpp",
-              "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp",
+              "DocumentMoniker": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp",
               "RelativeDocumentMoniker": "labs4-5\\Laba5.cpp",
-              "ToolTip": "C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp",
+              "ToolTip": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba5.cpp",
               "RelativeToolTip": "labs4-5\\Laba5.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwDIAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:57:47.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Laba4.cpp",
-              "DocumentMoniker": "C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp",
+              "DocumentMoniker": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp",
               "RelativeDocumentMoniker": "labs4-5\\Laba4.cpp",
-              "ToolTip": "C:\\git\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp",
+              "ToolTip": "C:\\git\\learningalt\\learningalt\\Medvedev\\labs4-5\\labs4-5\\Laba4.cpp",
               "RelativeToolTip": "labs4-5\\Laba4.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwB8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-06T11:52:13.977Z",
               "EditorCaption": ""
